@@ -284,7 +284,7 @@ describe("LocationPicker", () => {
                 });
 
                 // marker not added
-                expect(wrapper.find('.mx_MLocationBody_markerBorder').length).toBeFalsy();
+                expect(wrapper.find('Marker').length).toBeFalsy();
             });
 
             it('sets position on click event', () => {
