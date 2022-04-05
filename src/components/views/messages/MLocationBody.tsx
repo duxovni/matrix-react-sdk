@@ -15,14 +15,12 @@ limitations under the License.
 */
 
 import React from 'react';
-import maplibregl from 'maplibre-gl';
 import { MatrixEvent } from 'matrix-js-sdk/src/models/event';
 import {
     M_ASSET,
     LocationAssetType,
     ILocationContent,
 } from 'matrix-js-sdk/src/@types/location';
-import { ClientEvent, IClientWellKnown } from 'matrix-js-sdk/src/client';
 
 import { IBodyProps } from "./IBodyProps";
 import { _t } from '../../../languageHandler';
@@ -36,7 +34,6 @@ import LocationViewDialog from '../location/LocationViewDialog';
 import TooltipTarget from '../elements/TooltipTarget';
 import { Alignment } from '../elements/Tooltip';
 import AccessibleButton from '../elements/AccessibleButton';
-import { tileServerFromWellKnown } from '../../../utils/WellKnownUtils';
 import MatrixClientContext from '../../../contexts/MatrixClientContext';
 import Map from '../location/Map';
 import SmartMarker from '../location/SmartMarker';
