@@ -31,7 +31,7 @@ import Modal from '../../../Modal';
 import {
     parseGeoUri,
     locationEventGeoUri,
-    createMap,
+    createMapWithCoords,
     getLocationShareErrorMessage,
     LocationShareError,
 } from '../../../utils/location';
@@ -77,7 +77,7 @@ export default class MLocationBody extends React.Component<IBodyProps, IState> {
 
         this.context.on(ClientEvent.ClientWellKnown, this.updateStyleUrl);
 
-        this.map = createMap(
+        this.map = createMapWithCoords(
             this.coords,
             false,
             this.bodyId,
